@@ -1,5 +1,4 @@
-
-cat > pocket_client.py << 'PYEOF'
+ 'PYEOF'
 """
 Pocket Broker WebSocket client.
 Pulls live candles via BinaryOptionsToolsV2.
