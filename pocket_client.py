@@ -44,4 +44,3 @@ class PocketClient:
                 await self.api.close()
             except Exception:
                 pass
-PYEOF
