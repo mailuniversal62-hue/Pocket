@@ -9,7 +9,7 @@ Fires CALL/PUT signals when RSI + MACD + EMA agree. Sends to Telegram. Logs to C
 ## Setup
 
 ```bash
-git clone <your-repo>
+git clone https://github.com/mailuniversal62-hue/Pocket.git
 cd signalbot
 pip install -r requirements.txt
 ```
