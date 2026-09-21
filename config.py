@@ -1,12 +1,12 @@
 # Pocket Broker connection
-POCKET_SSID = ""  # your SSID cookie from the browser session
+POCKET_SSID = ""  # paste your SSID cookie here
 
-# Asset pair (exact name from Pocket Broker asset list)
+# Asset
 ASSET = "EURUSD_otc"
-TIMEFRAME = 60          # seconds (1M candles)
-CANDLE_COUNT = 200      # rolling window size
+TIMEFRAME = 60
+CANDLE_COUNT = 200
 
-# Indicator settings
+# Indicators
 RSI_PERIOD = 14
 RSI_OVERSOLD = 30
 RSI_OVERBOUGHT = 70
@@ -18,12 +18,12 @@ MACD_SIGNAL = 9
 EMA_FAST = 9
 EMA_SLOW = 21
 
-# Signal rules
-MIN_AGREEING_INDICATORS = 2   # need at least 2 of 3 to fire
+# Signal rule
+MIN_AGREEING_INDICATORS = 2
 
-# Telegram
-TELEGRAM_BOT_TOKEN = ""
-TELEGRAM_CHAT_ID = ""
+# Telegram — NEW TOKEN after /revoke, not the one you pasted
+TELEGRAM_BOT_TOKEN = "PASTE_NEW_TOKEN_HERE"
+TELEGRAM_CHAT_ID   = "7757706519"
 
 # Logging
 LOG_SIGNALS = True
