@@ -1,5 +1,10 @@
 cd ~/Pocket
 cat > pocket_client.py << 'PYEOF'
+"""
+Pocket Broker WebSocket client.
+Pulls live candles via BinaryOptionsToolsV2.
+"""
+
 import asyncio
 import pandas as pd
 from BinaryOptionsToolsV2.pocketoption import PocketOptionAsync
@@ -16,6 +21,9 @@ class PocketClient:
         return self.api
 
     async def get_candles(self, asset: str, timeframe: int, count: int) -> pd.DataFrame:
+        """
+        Returns DataFrame with columns: time, open, high, low, close
+        """
         raw = await self.api.get_candles(asset, timeframe, count)
 
         rows = []
