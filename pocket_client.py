@@ -1,4 +1,4 @@
- 'PYEOF'
+
 """
 Pocket Broker WebSocket client.
 Pulls live candles via BinaryOptionsToolsV2.
