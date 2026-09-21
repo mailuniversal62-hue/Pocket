@@ -1,4 +1,4 @@
-cd ~/Pocket
+
 cat > pocket_client.py << 'PYEOF'
 """
 Pocket Broker WebSocket client.
