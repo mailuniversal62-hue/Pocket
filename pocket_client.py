@@ -1,4 +1,4 @@
-
+cat > pocket_client.py << 'PYEOF'
 """
 Pocket Broker WebSocket client.
 Pulls live candles via BinaryOptionsToolsV2.
@@ -20,9 +20,6 @@ class PocketClient:
         return self.api
 
     async def get_candles(self, asset: str, timeframe: int, count: int) -> pd.DataFrame:
-        """
-        Returns DataFrame with columns: time, open, high, low, close
-        """
         raw = await self.api.get_candles(asset, timeframe, count)
 
         rows = []
@@ -44,3 +41,4 @@ class PocketClient:
                 await self.api.close()
             except Exception:
                 pass
+PYEOF
