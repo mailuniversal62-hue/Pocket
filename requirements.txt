@@ -1,0 +1,6 @@
+BinaryOptionsToolsV2
+pandas
+numpy
+requests
+colorama
+websocket-client
